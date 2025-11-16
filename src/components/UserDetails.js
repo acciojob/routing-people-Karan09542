@@ -10,7 +10,7 @@ const UserDetails = () => {
           .then(data => {
             setUser(data)
           })
-      },[id,user])
+      },[id])
     if(!user) return <div>Loading...</div>;
   return (
     <div>
