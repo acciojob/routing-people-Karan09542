@@ -5,11 +5,14 @@ const UserDetails = () => {
     const {id} = useParams();
     const [user, setUser] = useState(null);
     useEffect(() => {
-          fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
-          .then(res => res.json())
-          .then(data => {
-            setUser(data)
-          })
+          setUser(null);
+          setTimeout(() => {
+              fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+              .then(res => res.json())
+              .then(data => {
+                setUser(data)
+              })
+          }, 30)
       },[id])
     if(!user) return <div>Loading...</div>;
   return (
