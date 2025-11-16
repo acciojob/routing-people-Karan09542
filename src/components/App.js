@@ -1,7 +1,7 @@
 
 import React from "react";
 import './../styles/App.css';
-import UserList from "./USerList";
+import UserList from "./UserList";
 import { Route, Routes } from "react-router-dom";
 import UserDetails from "./UserDetails";
 
