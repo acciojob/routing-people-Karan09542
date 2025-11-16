@@ -11,7 +11,7 @@ const UserDetails = () => {
             setUser(data)
           })
       },[id,user])
-    if(!user) return <p>Loading...</p>;
+    if(!user) return <div>Loading...</div>;
   return (
     <div>
         <h1>User Details</h1>
